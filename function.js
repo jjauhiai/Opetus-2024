@@ -23,6 +23,13 @@ function ageComp(age)
       }
 
 }
+function getSum() {
+    let num1 = parseFloat(prompt("Enter the first number:"));
+    let num2 = parseFloat(prompt("Enter the second number:"));
+    return num1 + num2;
+}
+
+
 console.log("Lukujen tulo on ",myFunction(x,y));
 console.log("Suurempi on ",myComp(x,y));
 console.log(ageComp('perce'));
