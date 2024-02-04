@@ -30,6 +30,13 @@ function getSum() {
 }
 
 
+setTimeout(doSomething,2000);
+
+function doSomething(){
+    console.log("Demonstrating the callbacks");
+}
+                                                                                                                                                                                                                                                                                                                     
+console.log("The application is started");
 console.log("Lukujen tulo on ",myFunction(x,y));
 console.log("Suurempi on ",myComp(x,y));
 console.log(ageComp('perce'));
