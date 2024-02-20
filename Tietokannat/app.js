@@ -26,20 +26,8 @@ app.use('/book', bookRouter);
 app.use('/borrower', borrowerRouter);
 app.use('/user', userRouter);
 app.use('/login', loginRouter);
-app.use(
-    function(req,res,next){
-        console.log('The common middleware1 called');
-        next();
-    }
-);
 
 
-app.use(
-    function(req,res,next){
-        console.log('The common middleware2 called');
-        next();
-    }
-);
 function myAuthorizer(username, password,cb){
     db.query('SELECT password FROM user WHERE username = ?',[username], 
       function(dbError, dbResults, fields) {
