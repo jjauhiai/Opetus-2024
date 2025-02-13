@@ -15,30 +15,6 @@
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
---
--- Table structure for table `asiakas`
---
-
-DROP TABLE IF EXISTS `asiakas`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `asiakas` (
-  `idAsiakas` int(11) NOT NULL,
-  `Etunimi` varchar(45) DEFAULT NULL,
-  `Sukunimi` varchar(45) DEFAULT NULL,
-  `Osoite` varchar(45) DEFAULT NULL,
-  PRIMARY KEY (`idAsiakas`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `asiakas`
---
-
-LOCK TABLES `asiakas` WRITE;
-/*!40000 ALTER TABLE `asiakas` DISABLE KEYS */;
-/*!40000 ALTER TABLE `asiakas` ENABLE KEYS */;
-UNLOCK TABLES;
 
 --
 -- Table structure for table `book`
